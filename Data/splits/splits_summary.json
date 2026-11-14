@@ -1,0 +1,30 @@
+{
+  "random_seed": 42,
+  "train": {
+    "num_stars": 24,
+    "num_tces": 36,
+    "planet_candidates": 16,
+    "non_planets": 20,
+    "pc_rate": 0.4444444444444444
+  },
+  "val": {
+    "num_stars": 2,
+    "num_tces": 4,
+    "planet_candidates": 3,
+    "non_planets": 1,
+    "pc_rate": 0.75
+  },
+  "test": {
+    "num_stars": 4,
+    "num_tces": 10,
+    "planet_candidates": 6,
+    "non_planets": 4,
+    "pc_rate": 0.6
+  },
+  "star_overlap_verification": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0,
+    "passed": true
+  }
+}

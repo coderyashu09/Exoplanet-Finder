@@ -1,0 +1,21 @@
+{
+  "total_raw_rows": 20367,
+  "exclusions": {
+    "unknown_or_missing_label": 4630,
+    "invalid_period": 0,
+    "invalid_duration": 0,
+    "missing_epoch": 0,
+    "invalid_kepid": 0
+  },
+  "final_valid_rows": 15737,
+  "unique_stars": 9865,
+  "label_counts": {
+    "AFP": 9596,
+    "PC": 3600,
+    "NTP": 2541
+  },
+  "binary_target_counts": {
+    "0": 12137,
+    "1": 3600
+  }
+}

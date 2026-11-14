@@ -1,0 +1,27 @@
+# NASA Exoplanet Finder - Production Dependencies
+# Compatible with Python 3.11 / 3.12
+
+# Scientific Computing & Astronomy
+numpy>=1.26.0,<3.0.0
+pandas>=2.1.0,<3.0.0
+scipy>=1.12.0
+astropy>=6.0.0
+lightkurve>=2.4.2
+astroquery>=0.4.7
+
+# Deep Learning & Machine Learning
+torch>=2.2.0
+scikit-learn>=1.4.0
+joblib>=1.3.0
+
+# Visualization & Dashboard
+matplotlib>=3.8.0
+plotly>=5.18.0
+streamlit>=1.32.0
+
+# Utilities & Experiment Tracking
+pyyaml>=6.0.1
+tqdm>=4.66.0
+pytest>=8.0.0
+requests>=2.31.0
+

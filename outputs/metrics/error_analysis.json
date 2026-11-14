@@ -1,0 +1,89 @@
+{
+  "false_positives": {
+    "count": 131,
+    "mean_period": 19.9,
+    "mean_depth_ppm": 1572.09,
+    "afp_count": 127,
+    "ntp_count": 4,
+    "top_examples": [
+      {
+        "kepid": 2445129,
+        "tce_plnt_num": 1,
+        "tce_period": 10.3188,
+        "tce_depth": 738.0,
+        "probability": 0.9193385254001444
+      },
+      {
+        "kepid": 2445129,
+        "tce_plnt_num": 2,
+        "tce_period": 10.3186,
+        "tce_depth": 418.1,
+        "probability": 0.915476392305661
+      },
+      {
+        "kepid": 2445154,
+        "tce_plnt_num": 1,
+        "tce_period": 8.41217,
+        "tce_depth": 553.4,
+        "probability": 0.8821720539728385
+      },
+      {
+        "kepid": 2437488,
+        "tce_plnt_num": 1,
+        "tce_period": 14.4702,
+        "tce_depth": 1260.0,
+        "probability": 0.850569242573717
+      },
+      {
+        "kepid": 2437488,
+        "tce_plnt_num": 2,
+        "tce_period": 14.4701,
+        "tce_depth": 816.3,
+        "probability": 0.7709489752341301
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 42,
+    "mean_period": 8.59,
+    "mean_depth_ppm": 3009.86,
+    "top_examples": [
+      {
+        "kepid": 3103212,
+        "tce_plnt_num": 1,
+        "tce_period": 3.25417,
+        "tce_depth": 77.55,
+        "probability": 0.3395642525875358
+      },
+      {
+        "kepid": 4570949,
+        "tce_plnt_num": 1,
+        "tce_period": 1.54493,
+        "tce_depth": 5682.0,
+        "probability": 0.5274290299334009
+      },
+      {
+        "kepid": 4242692,
+        "tce_plnt_num": 1,
+        "tce_period": 1.13855,
+        "tce_depth": 83.56,
+        "probability": 0.12228220661564518
+      },
+      {
+        "kepid": 3866536,
+        "tce_plnt_num": 1,
+        "tce_period": 3.82621,
+        "tce_depth": 47.4,
+        "probability": 0.032823332460518356
+      },
+      {
+        "kepid": 5371776,
+        "tce_plnt_num": 4,
+        "tce_period": 1.49914,
+        "tce_depth": 268.8,
+        "probability": 0.4735329102663701
+      }
+    ]
+  },
+  "threshold_used": 0.6661
+}

@@ -1,0 +1,32 @@
+{
+  "roc_auc": 0.3333,
+  "average_precision": 0.3333,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1_score": 0.0,
+  "specificity": 1.0,
+  "threshold": 0.4831,
+  "confusion_matrix": {
+    "tn": 3,
+    "fp": 0,
+    "fn": 1,
+    "tp": 0
+  },
+  "confidence_intervals_95": {
+    "roc_auc": {
+      "mean": 0.2944,
+      "ci_lower": 0.0,
+      "ci_upper": 0.5
+    },
+    "average_precision": {
+      "mean": 0.4574,
+      "ci_lower": 0.3333,
+      "ci_upper": 0.6667
+    },
+    "f1_score": {
+      "mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "roc_auc": {
+    "baseline": 0.9457,
+    "cnn": 0.3333,
+    "absolute_delta": -0.6124,
+    "relative_improvement_pct": -64.76
+  },
+  "average_precision": {
+    "baseline": 0.7836,
+    "cnn": 0.3333,
+    "absolute_delta": -0.4503,
+    "relative_improvement_pct": -57.47
+  },
+  "precision": {
+    "baseline": 0.7108,
+    "cnn": 0.0,
+    "absolute_delta": -0.7108,
+    "relative_improvement_pct": -100.0
+  },
+  "recall": {
+    "baseline": 0.8846,
+    "cnn": 0.0,
+    "absolute_delta": -0.8846,
+    "relative_improvement_pct": -100.0
+  },
+  "f1_score": {
+    "baseline": 0.7882,
+    "cnn": 0.0,
+    "absolute_delta": -0.7882,
+    "relative_improvement_pct": -100.0
+  },
+  "specificity": {
+    "baseline": 0.8935,
+    "cnn": 1.0,
+    "absolute_delta": 0.1065,
+    "relative_improvement_pct": 11.92
+  }
+}

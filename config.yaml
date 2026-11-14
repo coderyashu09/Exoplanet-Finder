@@ -1,0 +1,79 @@
+# NASA Exoplanet Finder Configuration
+project:
+  name: "Exoplanet Finder"
+  tagline: "Discover New Worlds Beyond Our Solar System"
+  version: "1.0.0"
+
+paths:
+  raw_data_dir: "Data/raw"
+  original_data_file: "Data/q1_q17_dr24_tce_2026.11.05_23.02.25.csv"
+  tce_catalog_file: "Data/raw/q1_q17_dr24_tce.csv"
+  lightcurves_dir: "Data/lightcurves"
+  processed_dir: "Data/processed"
+  splits_dir: "Data/splits"
+  models_dir: "models"
+  checkpoints_dir: "models/checkpoints"
+  baseline_dir: "models/baseline"
+  metadata_dir: "models/metadata"
+  outputs_dir: "outputs"
+  metrics_dir: "outputs/metrics"
+  figures_dir: "outputs/figures"
+  predictions_dir: "outputs/predictions"
+  experiments_dir: "outputs/experiments"
+  experiments_db: "outputs/experiments/experiments.db"
+
+data:
+  label_column: "av_training_set"
+  valid_labels:
+    PC: 1
+    AFP: 0
+    NTP: 0
+  excluded_labels:
+    - "UNK"
+  star_id_col: "kepid"
+  train_split: 0.80
+  val_split: 0.10
+  test_split: 0.10
+  random_seed: 42
+  time_system: "BKJD"
+
+preprocessing:
+  flatten_window_length: 401
+  polyorder: 2
+  transit_mask_factor: 1.2
+  global_bins: 2001
+  local_bins: 201
+  local_duration_factor: 4.0
+  min_valid_flux_ratio: 0.5
+
+baseline:
+  model_type: "HistGradientBoostingClassifier"
+  features:
+    - "tce_period"
+    - "tce_duration"
+    - "tce_depth"
+  random_state: 42
+  max_iter: 200
+  learning_rate: 0.05
+  max_leaf_nodes: 31
+
+cnn:
+  global_length: 2001
+  local_length: 201
+  global_channels: [16, 32, 64, 128]
+  local_channels: [16, 32, 64, 128]
+  dense_units: [512, 128]
+  dropout: 0.3
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 32
+  epochs: 50
+  early_stopping_patience: 10
+  device: "auto"
+  pos_weight: 1.0
+
+inference:
+  default_threshold: 0.50
+  uncertainty_window: 0.15
+  kepler90_kepid: 11442793
+

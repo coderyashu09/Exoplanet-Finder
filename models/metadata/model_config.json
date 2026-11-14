@@ -1,0 +1,15 @@
+{
+  "architecture": "DualViewExoplanetCNN",
+  "global_length": 2001,
+  "local_length": 201,
+  "parameters": {
+    "total_parameters": 676001,
+    "trainable_parameters": 676001
+  },
+  "training_duration_seconds": 0.98,
+  "best_val_auc": 1.0,
+  "optimal_threshold": 0.4831,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001
+}
